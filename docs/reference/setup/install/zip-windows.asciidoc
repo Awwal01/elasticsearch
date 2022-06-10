@@ -39,7 +39,7 @@ Download the `.zip` archive for {es} {version} from: https://artifacts.elastic.c
 
 Unzip it with your favorite unzip tool. This will create a folder called
 +elasticsearch-{version}+, which we will refer to as `%ES_HOME%`. In a terminal
-window, `cd` to the `%ES_HOME%` directory, for instance:
+window (recommended not to open terminal as administrator to avoid autoconfiguration error also ensure your internet is on to enable any required download), `cd` to the `%ES_HOME%` directory, for instance:
 
 ["source","sh",subs="attributes"]
 ----------------------------
@@ -80,6 +80,8 @@ NOTE: Values that contain spaces must be surrounded with quotes. For instance `-
 TIP: Typically, any cluster-wide settings (like `cluster.name`) should be
 added to the `elasticsearch.yml` config file, while any node-specific settings
 such as `node.name` could be specified on the command line.
+Elastic is easy to clean up, if installation didn't work as expected,
+`cd` out of the unzipped folder (`%ES_HOME%`), delete the folder and retry.
 
 :es-conf:    %ES_HOME%\config
 :slash:        \
